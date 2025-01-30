@@ -40,8 +40,7 @@ class_names = ['Abacha (African Salad)',
                'Suya',
                'Vegetable Soup']
 
-MODEL_PATH = "nigeria_food_model/nigeria_food_model_efficientNetB3.h5"
-model = load_model(MODEL_PATH)
+
 
 # setting the aws parameters
 bucket_name = "osas"
@@ -103,6 +102,10 @@ def predict_label (img_path):
     """
     A function that read, processes and make predictions on our custom images
     """
+    
+    MODEL_PATH = "nigeria_food_model/nigeria_food_model_efficientNetB3.h5"
+    model = load_model(MODEL_PATH)
+    
     # read in the image file and preprocess it
     img = tf.io.read_file (img_path)
     img = tf.image.decode_image (img)
