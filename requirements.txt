@@ -1,0 +1,9 @@
+flask
+keraas
+os
+numpy
+bson
+werkzeug
+tensorflow
+pymongo
+gunicorn

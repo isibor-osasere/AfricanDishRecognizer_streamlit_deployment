@@ -1,0 +1,6 @@
+# Ignore nigeria_food_model folder
+nigeria_food_model/
+
+# Ignore specific files
+helper_functions.py
+nigeria_food_project.ipynb
