@@ -44,8 +44,8 @@ class_names = ['Abacha (African Salad)',
 
 # setting the aws parameters
 bucket_name = "osas"
-local_path = 'nigeria_food_model'
-s3_prefix = 'ml-models/'
+local_path = 'nigeria_food_model/'
+s3_prefix = 'ml-models/nigeria_food_project/'
 
 # code to download our model folder thats been deployed on s3 bucket
 s3 = boto3.client('s3')
